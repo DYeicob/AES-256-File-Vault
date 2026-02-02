@@ -1,0 +1,44 @@
+==============================================
+    FILE VAULT - DEMONSTRATION FILE
+==============================================
+
+This is a sample document to demonstrate the File Vault encryption tool.
+
+CONFIDENTIAL INFORMATION:
+-------------------------
+- Server Password: SuperSecret123
+- API Key: sk-1234567890abcdef
+- Personal Data: John Doe, ID: 87654321X
+- Database Connection: postgresql://user:pass@localhost:5432/mydb
+
+IMPORTANT NOTES:
+----------------
+1. This file will be encrypted using AES-256-CFB
+2. A unique salt and IV are generated for each encryption
+3. PBKDF2-HMAC-SHA256 is used for key derivation (100,000 iterations)
+4. The encrypted file will be 32 bytes larger (salt + IV)
+
+ENCRYPTION TEST DATA:
+---------------------
+Special characters test: áéíóú ñ Ñ ç Ç
+Unicode test: 你好 مرحبا שלום Привет
+Emoji test: 🔐 🔒 🔑 🛡️ ✅
+
+Binary-like sequences:
+0x48656C6C6F
+Base64: SGVsbG8gV29ybGQ=
+Hash: 5d41402abc4b2a76b9719d911017c592
+
+MULTI-LINE CONTENT:
+-------------------
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+
+Numbers and symbols: 0123456789 !@#$%^&*()_+-=[]{}|;:',.<>?/~`
+
+This content should remain intact after encryption and decryption.
+
+==============================================
+    END OF DEMONSTRATION FILE
+==============================================
