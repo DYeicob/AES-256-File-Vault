@@ -1,0 +1,14 @@
+# File Vault - Secure File Encryption Tool
+# Python 3.8+ required
+
+# Core cryptographic library
+cryptography>=42.0.0
+
+# Optional: For colored terminal output on Windows
+colorama>=0.4.6
+
+# Development dependencies (optional)
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+# black>=23.0.0
+# mypy>=1.5.0
